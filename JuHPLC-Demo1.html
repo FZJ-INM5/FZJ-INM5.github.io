@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)https://www.volkermauel.de/Downloads/Demo.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -9096,24 +9096,24 @@ a.text-dark:hover, a.text-dark:focus {
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <a class="navbar-brand" href="https://www.volkermauel.de/">JuHPLC</a>
+    <a class="navbar-brand" href="/">JuHPLC</a>
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="https://www.volkermauel.de/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.volkermauel.de/NewChromatogram">New Chromatogram</a>
+                <a class="nav-link" href="/NewChromatogram">New Chromatogram</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.volkermauel.de/Calibration">Calibration</a>
+                <a class="nav-link" href="/Calibration">Calibration</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 
-                    <a class="nav-link" href="https://www.volkermauel.de/logout/">Logout (v.mauel)</a>
+                    <a class="nav-link" href="/logout/">Logout (v.mauel)</a>
                 
             </li>
         </ul>
@@ -11673,69 +11673,319 @@ return result;}
 function addSeries(a,b){var result=[];for(var i=0;i<Math.max(a.length,b.length);i++){result[i]=0;if(i<a.length){result[i]+=a[i];}
 if(i<b.length){result[i]+=b[i];}}
 return result;}</script>
-    <div id="app"><nav class="hidden-print navbar navbar-light navbar-expand-md fixed-top" style="background-color: white;"><button type="button" data-toggle="collapse" data-target="#navbar1" class="navbar-toggler navbar-toggler-right d-print-none"><span class="d-print-none navbar-toggler-icon"></span></button> <a href="https://www.volkermauel.de/" class="navbar-brand">Menu</a> <div id="navbar1" class="navbar-collapse collapse"><ul class="navbar-nav"><span href="#" id="saveBtn" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link" data-original-title="Saves the changes made on the Server. (Ctrl+S)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save" style="width: 22px; height: 22px;"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save
-                </span> <span href="#" id="deletePeaksBtn" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link" data-original-title="Deletes all Peaks"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2" style="width: 22px; height: 22px;"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete Peaks
-                </span> <span href="#" id="findPeaksModalOpen" data-toggle="modal" data-placement="bottom" data-target="#findPeaksModal" onclick="$(&#39;#findPeaksModalMinWidth&#39;)[0].valueAsNumber=0;minArea=$(&#39;#findPeaksModalMinArea&#39;)[0].valueAsNumber=0;$(&#39;#findPeaksModalMinHeight&#39;)[0].valueAsNumber=0;" title="" class="nav-link" data-original-title="Find Peaks matching the required Conditions on the specified Graph. (Ctrl+F)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" style="width: 22px; height: 22px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> Find Peaks
-                </span> <span href="#" id="scaleYBtn" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link" data-original-title="Scale Y-Axis (Ctrl+Y)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2" style="width: 22px; height: 22px; transform: rotate(-45deg);"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg> Scale Y-Axis
-                </span> <span href="#" id="scaleXBtn" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link" data-original-title="Scale X-Axis (Ctrl+X)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2" style="width: 22px; height: 22px; transform: rotate(45deg);"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg> Scale X-Axis
-                </span> <button id="editBaselineBtn" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link btn btn-sm hplc-btn" data-original-title="Edit Baseline (Ctrl+B)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit" style="width: 22px; height: 22px;"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg> Edit Baseline
-                    </button> <button id="deadtimeselection" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link btn btn-sm hplc-btn" data-original-title="Enables the Deadtime Selection on the Graphs. Click anywhere to move the Deadtime to that point."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair" style="width: 22px; height: 22px;"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg> Deadtime Selection
-                    </button> <li class="nav-item dropdown"><a href="https://www.volkermauel.de/Downloads/Demo.html#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download" style="width: 22px; height: 22px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Download</a> <div aria-labelledby="dropdown01" class="dropdown-menu"><a id="downloadBtn" href="https://www.volkermauel.de/Downloads/Demo.html#" data-toggle="tooltip" data-placement="right" title="" class="dropdown-item" data-original-title="Downloads the current Chromatogram as an CSV file to be used in any other software">
-                                CSV
-                            </a> <a id="downloadBtnJson" href="https://www.volkermauel.de/Downloads/Demo.html#" data-toggle="tooltip" data-placement="right" title="" class="dropdown-item" data-original-title="Downloads the underlying Data as json Object.">
-                                Json
-                            </a> <a id="downloadBtnPeaksimple" href="https://www.volkermauel.de/Downloads/Demo.html#" data-toggle="tooltip" data-placement="right" title="" class="dropdown-item" data-original-title="Downloads the current Chromatogram as Peaksimple-compatible .asc files">
-                                Peaksimple
-                            </a> <a id="exportBtn" href="https://www.volkermauel.de/Downloads/Demo.html?export=true" download="" data-toggle="tooltip" data-placement="right" title="" class="dropdown-item" data-original-title="Downloads the current Chromatogram as an HTML file that can be sent via mail">
-                                HTML Export
-                            </a> <a id="exportBtn" href="https://www.volkermauel.de/Chromatogram/7/PDFDownload?print=true" download="" data-toggle="tooltip" data-placement="right" title="Downloads the current Chromatogram as PDF File" class="dropdown-item">
-                                PDF Report
-                            </a></div></li> <li class="nav-item dropdown"><a href="https://www.volkermauel.de/Downloads/Demo.html#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical" style="width: 22px; height: 22px;"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>More</a> <div aria-labelledby="dropdown02" class="dropdown-menu"><table class="table small table-sm"><tbody><tr><th colspan="2">
-                                        Additional Options
-                                    </th></tr> <tr><td><span href="#" id="viewSwitch" data-toggle="tooltip" data-placement="bottom" title="" class="nav-link" data-original-title="View-Switch"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="viewSwitchIcon" class="feather feather-more-vertical" style="width: 22px; height: 22px;"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg> View-Switch
-                            </span></td> <td><span href="#" id="optionsBtn" data-toggle="tooltip" data-placement="bottom" title="Options+" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="optionsBtnIcon" class="feather feather-settings" style="width: 22px; height: 22px;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Options
-                            </span></td></tr> <tr><td colspan="2"><p>Import Chromatogram</p> <span class="nav-link btn btn-sm hplc-btn"><input type="file" id="fileInput"></span></td></tr> <tr><td colspan="2"><p>Import Calibration</p> <span class="nav-link btn btn-sm hplc-btn"><input type="file" id="fileInputCalibration"></span></td></tr></tbody></table></div></li></ul></div></nav> <div class="container-fluid" style="line-height: 1; top: 10px;"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12"><h3>Chromatogram Details - 7</h3></div></div> <div class="row"><div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="card" graphname="UV"><div class="card-header"><h5>Mars-Test</h5></div> <div class="card-block"><table class="table small table-sm"><tr><th style="white-space: nowrap;">Column</th> <td>Kromasil abc</td></tr> <tr><th style="white-space: nowrap;">Flow</th> <td>111</td></tr> <tr><th style="white-space: nowrap;">UV Wavelength</th> <td>444</td></tr> <tr><th style="white-space: nowrap;">Concentration</th> <td>333 mg/ml</td></tr> <tr><th style="white-space: nowrap;">Injection Volume</th> <td>222</td></tr> <tr><th style="white-space: nowrap;">Sample Rate</th> <td>1</td></tr></table></div></div></div> <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><div class="card"><div class="card-header">Comment</div> <div class="card-block"><textarea id="comment" style="width: 100%; height: 140px;"></textarea></div></div></div></div></div> <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><div class="row"><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="card"><div class="card-header">Eluent20</div> <div class="card-block">
-                                        
-                                            
-                                                e0s1 - 1.0<br>
-                                            
-                                        
-                                            
-                                                e0s2 - 2.0<br>
-                                            
-                                        
-                                            
-                                                e0s3 - 3.0<br></div></div></div> <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="card"><div class="card-header">Eluent21</div> <div class="card-block">
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                                e1s1 - 1.0<br>
-                                            
-                                        
-                                            
-                                                e1s2 - 2.0<br></div></div></div> <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="card"><div class="card-header">Eluent22</div> <div class="card-block">
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                        
-                                            
-                                                e2s1 - 1.0<br></div></div></div></div></div> <div class="marker"></div> <div class="col-lg-12 juhplcGraphAndTable"><div style="break-before: auto;"></div> <div style="break-inside: avoid;"><div class="dygraphsDiv"><div id="dygraphs-graph-label3">9.800:<span> <b><span style="color: rgb(0,128,128);">UV</span></b>:&nbsp;337.01</span></div><div id="dygraphs-graph3" class="dygraphsGraph" style="width: 100%;"><div style="text-align: left; position: relative; width: 1817px; height: 320px;"><canvas width="1817" height="320" style="position: absolute; width: 1817px; height: 320px;"></canvas><canvas width="1817" height="320" style="position: absolute; width: 1817px; height: 320px;"></canvas><input type="text" class="dygraph-roller" size="2" style="display: none; top: 275px; left: 57px;"><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 320px; font-size: 16px;"><div class="dygraph-label-rotate-right" style="position: absolute; width: 320px; height: 0px; top: 160px; left: -160px;"><div class="dygraph-label dygraph-ylabel">UV( µAu )</div></div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 286px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">0</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 238.814px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">200</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 184.629px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">400</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 130.443px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">600</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 76.2577px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">800</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 22.0722px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">1000</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 26px;"><div class="dygraph-axis-label dygraph-axis-label-x">0</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 91.2788px;"><div class="dygraph-axis-label dygraph-axis-label-x">1</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 156.558px;"><div class="dygraph-axis-label dygraph-axis-label-x">2</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 221.836px;"><div class="dygraph-axis-label dygraph-axis-label-x">3</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 287.115px;"><div class="dygraph-axis-label dygraph-axis-label-x">4</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 352.394px;"><div class="dygraph-axis-label dygraph-axis-label-x">5</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 417.673px;"><div class="dygraph-axis-label dygraph-axis-label-x">6</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 482.952px;"><div class="dygraph-axis-label dygraph-axis-label-x">7</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 548.23px;"><div class="dygraph-axis-label dygraph-axis-label-x">8</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 613.509px;"><div class="dygraph-axis-label dygraph-axis-label-x">9</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 678.788px;"><div class="dygraph-axis-label dygraph-axis-label-x">10</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 744.067px;"><div class="dygraph-axis-label dygraph-axis-label-x">11</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 809.346px;"><div class="dygraph-axis-label dygraph-axis-label-x">12</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 874.625px;"><div class="dygraph-axis-label dygraph-axis-label-x">13</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 939.903px;"><div class="dygraph-axis-label dygraph-axis-label-x">14</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1005.18px;"><div class="dygraph-axis-label dygraph-axis-label-x">15</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1070.46px;"><div class="dygraph-axis-label dygraph-axis-label-x">16</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1135.74px;"><div class="dygraph-axis-label dygraph-axis-label-x">17</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1201.02px;"><div class="dygraph-axis-label dygraph-axis-label-x">18</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1266.3px;"><div class="dygraph-axis-label dygraph-axis-label-x">19</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1331.58px;"><div class="dygraph-axis-label dygraph-axis-label-x">20</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1396.86px;"><div class="dygraph-axis-label dygraph-axis-label-x">21</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1462.13px;"><div class="dygraph-axis-label dygraph-axis-label-x">22</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1527.41px;"><div class="dygraph-axis-label dygraph-axis-label-x">23</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1592.69px;"><div class="dygraph-axis-label dygraph-axis-label-x">24</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1657.97px;"><div class="dygraph-axis-label dygraph-axis-label-x">25</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1723.25px;"><div class="dygraph-axis-label dygraph-axis-label-x">26</div></div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 96.5471px; top: 186.405px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">0</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 124.835px; top: 149.48px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">1</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 172.706px; top: 237.212px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">2</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 244.512px; top: 236.129px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">3</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 305.439px; top: 192.123px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">4</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 323.935px; top: 195.221px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">5</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 433.821px; top: 0.609718px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">6</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 515.419px; top: 189.144px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">7</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 618.778px; top: 162.391px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">8</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 716.696px; top: 164.979px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">9</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 807.938px; top: 191.116px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">10</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 947.2px; top: 145.356px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">11</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1016.83px; top: 0.611614px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">12</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1218.11px; top: 215.785px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">13</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1281.21px; top: 212.633px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">14</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1549.94px; top: 200.328px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">15</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1659.83px; top: 254.141px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">16</div></div></div></div> <div class="peakTable"><table class="table table-sm juhplcPeakTable page-break-inside-avoid"><thead><tr><th></th> <th>#</th> <th>Name</th> <th>t<sub>R</sub></th> <th>k'</th> <th>Symmetry</th> <th>N</th> <th>Area</th> <th>Details</th> <th>Delete</th> <th>%</th></tr></thead> <tbody><tr style="background-color: rgba(0, 0, 0, 0.5);"><td><input type="checkbox"></td><td>0</td><td><input type="text" value="undefined"></td><td>0.77</td><td>4.75</td><td>0.54</td><td>29.31</td><td>4523.69</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 255, 0, 0.5);"><td><input type="checkbox"></td><td>1</td><td><input type="text" value="undefined"></td><td>1.2</td><td>8</td><td>0.7</td><td>99.37</td><td>7150.63</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(28, 230, 255, 0.5);"><td><input type="checkbox"></td><td>2</td><td><input type="text" value="undefined"></td><td>1.93</td><td>13.5</td><td>1.21</td><td>77.57</td><td>2762.75</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 52, 255, 0.5);"><td><input type="checkbox"></td><td>3</td><td><input type="text" value="undefined"></td><td>3.03</td><td>21.75</td><td>0.53</td><td>271.46</td><td>3418.68</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 74, 70, 0.5);"><td><input type="checkbox"></td><td>4</td><td><input type="text" value="undefined"></td><td>3.97</td><td>28.75</td><td>1.25</td><td>968.54</td><td>6043.85</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 137, 65, 0.5);"><td><input type="checkbox"></td><td>5</td><td><input type="text" value="undefined"></td><td>4.25</td><td>30.88</td><td>0.59</td><td>494.15</td><td>8034.53</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 111, 166, 0.5);"><td><input type="checkbox"></td><td>6</td><td><input type="text" value="undefined"></td><td>5.93</td><td>43.5</td><td>0.68</td><td>156.41</td><td>66211.35</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(163, 0, 89, 0.5);"><td><input type="checkbox"></td><td>7</td><td><input type="text" value="undefined"></td><td>7.18</td><td>52.88</td><td>0.79</td><td>890.24</td><td>9218.69</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 219, 229, 0.5);"><td><input type="checkbox"></td><td>8</td><td><input type="text" value="undefined"></td><td>8.77</td><td>64.75</td><td>0.44</td><td>150.26</td><td>28066.49</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(122, 73, 0, 0.5);"><td><input type="checkbox"></td><td>9</td><td><input type="text" value="undefined"></td><td>10.27</td><td>76</td><td>0.93</td><td>2883.66</td><td>4215.27</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 0, 166, 0.5);"><td><input type="checkbox"></td><td>10</td><td><input type="text" value="undefined"></td><td>11.73</td><td>87</td><td>0.57</td><td>162.47</td><td>18103.77</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(99, 255, 172, 0.5);"><td><input type="checkbox"></td><td>11</td><td><input type="text" value="undefined"></td><td>13.87</td><td>103</td><td>0.94</td><td>3521.51</td><td>9093.32</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(183, 151, 98, 0.5);"><td><input type="checkbox"></td><td>12</td><td><input type="text" value="undefined"></td><td>14.93</td><td>111</td><td>0.92</td><td>882.29</td><td>63652.74</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 77, 67, 0.5);"><td><input type="checkbox"></td><td>13</td><td><input type="text" value="undefined"></td><td>18.02</td><td>134.13</td><td>2.81</td><td>610.22</td><td>11371.53</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(143, 176, 255, 0.5);"><td><input type="checkbox"></td><td>14</td><td><input type="text" value="undefined"></td><td>18.98</td><td>141.38</td><td>0.58</td><td>949.55</td><td>16273.69</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(153, 125, 135, 0.5);"><td><input type="checkbox"></td><td>15</td><td><input type="text" value="undefined"></td><td>23.1</td><td>172.25</td><td>0.84</td><td>5029.45</td><td>11893.76</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(90, 0, 7, 0.5);"><td><input type="checkbox"></td><td>16</td><td><input type="text" value="undefined"></td><td>24.78</td><td>184.88</td><td>0.85</td><td>4899.95</td><td>2836.54</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr></tbody></table></div></div> <div style="break-after: page;"></div></div><div class="col-lg-12 juhplcGraphAndTable"><div style="break-before: auto;"></div> <div style="break-inside: avoid;"><div class="dygraphsDiv"><div id="dygraphs-graph-label22">9.800:<span> <b><span style="color: rgb(0,128,128);">Counter</span></b>:&nbsp;35</span></div><div id="dygraphs-graph22" class="dygraphsGraph" style="width: 100%;"><div style="text-align: left; position: relative; width: 1817px; height: 320px;"><canvas width="1817" height="320" style="position: absolute; width: 1817px; height: 320px;"></canvas><canvas width="1817" height="320" style="position: absolute; width: 1817px; height: 320px;"></canvas><input type="text" class="dygraph-roller" size="2" style="display: none; top: 275px; left: 57px;"><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 320px; font-size: 16px;"><div class="dygraph-label-rotate-right" style="position: absolute; width: 320px; height: 0px; top: 160px; left: -160px;"><div class="dygraph-label dygraph-ylabel">Counter( CPS )</div></div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 286px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">0</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 252.76px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">5000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 212.52px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">10000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 172.28px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">15000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 132.04px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">20000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 91.7998px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">25000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 51.5597px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">30000</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 11.3197px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">35000</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 26px;"><div class="dygraph-axis-label dygraph-axis-label-x">0</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 91.2788px;"><div class="dygraph-axis-label dygraph-axis-label-x">1</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 156.558px;"><div class="dygraph-axis-label dygraph-axis-label-x">2</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 221.836px;"><div class="dygraph-axis-label dygraph-axis-label-x">3</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 287.115px;"><div class="dygraph-axis-label dygraph-axis-label-x">4</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 352.394px;"><div class="dygraph-axis-label dygraph-axis-label-x">5</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 417.673px;"><div class="dygraph-axis-label dygraph-axis-label-x">6</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 482.952px;"><div class="dygraph-axis-label dygraph-axis-label-x">7</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 548.23px;"><div class="dygraph-axis-label dygraph-axis-label-x">8</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 613.509px;"><div class="dygraph-axis-label dygraph-axis-label-x">9</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 678.788px;"><div class="dygraph-axis-label dygraph-axis-label-x">10</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 744.067px;"><div class="dygraph-axis-label dygraph-axis-label-x">11</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 809.346px;"><div class="dygraph-axis-label dygraph-axis-label-x">12</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 874.625px;"><div class="dygraph-axis-label dygraph-axis-label-x">13</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 939.903px;"><div class="dygraph-axis-label dygraph-axis-label-x">14</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1005.18px;"><div class="dygraph-axis-label dygraph-axis-label-x">15</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1070.46px;"><div class="dygraph-axis-label dygraph-axis-label-x">16</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1135.74px;"><div class="dygraph-axis-label dygraph-axis-label-x">17</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1201.02px;"><div class="dygraph-axis-label dygraph-axis-label-x">18</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1266.3px;"><div class="dygraph-axis-label dygraph-axis-label-x">19</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1331.58px;"><div class="dygraph-axis-label dygraph-axis-label-x">20</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1396.86px;"><div class="dygraph-axis-label dygraph-axis-label-x">21</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1462.13px;"><div class="dygraph-axis-label dygraph-axis-label-x">22</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1527.41px;"><div class="dygraph-axis-label dygraph-axis-label-x">23</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1592.69px;"><div class="dygraph-axis-label dygraph-axis-label-x">24</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1657.97px;"><div class="dygraph-axis-label dygraph-axis-label-x">25</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 303px; left: 1723.25px;"><div class="dygraph-axis-label dygraph-axis-label-x">26</div></div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 112.867px; top: 273.292px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">0</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 216.225px; top: 269.356px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">1</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 285.856px; top: 263.014px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">2</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 344.607px; top: 271.996px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">3</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 359.838px; top: 272.439px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">4</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 404.445px; top: 272.286px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">5</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 477.34px; top: 272.535px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">6</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 552.411px; top: 270.893px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">7</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 580.698px; top: 269.976px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">8</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 652.505px; top: 273.429px; width: 19px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">9</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 695.876px; top: 273.565px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">10</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 791.618px; top: 273.598px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">13</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 862.337px; top: 273.646px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">14</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 910.208px; top: 273.614px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">16</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 933.056px; top: 273.573px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">15</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1022.27px; top: 273.67px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">17</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1165.88px; top: 1.26102px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">18</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1366.07px; top: 218.115px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">19</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1704.43px; top: 273.284px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">20</div><div class="dygraph-annotation dygraphDefaultAnnotation dygraph-default-annotation" title="undefined" style="font-size: 14px; left: 1762.1px; top: 273.332px; width: 28px; height: 16px; color: rgb(0, 128, 128); border-color: rgb(0, 128, 128);">21</div></div></div></div> <div class="peakTable"><table class="table table-sm juhplcPeakTable page-break-inside-avoid"><thead><tr><th></th> <th>#</th> <th>Name</th> <th>t<sub>R</sub></th> <th>k'</th> <th>Symmetry</th> <th>N</th> <th>Area</th> <th>Details</th> <th>Delete</th> <th>%</th></tr></thead> <tbody><tr style="background-color: rgba(0, 0, 0, 0.5);"><td><input type="checkbox"></td><td>0</td><td><input type="text" value="undefined"></td><td>1.02</td><td>6.63</td><td>Infinity</td><td>121.98</td><td>376</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 255, 0, 0.5);"><td><input type="checkbox"></td><td>1</td><td><input type="text" value="undefined"></td><td>2.6</td><td>18.5</td><td>0.95</td><td>98.48</td><td>24721</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(28, 230, 255, 0.5);"><td><input type="checkbox"></td><td>2</td><td><input type="text" value="undefined"></td><td>3.67</td><td>26.5</td><td>0.67</td><td>670.34</td><td>25730.5</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 52, 255, 0.5);"><td><input type="checkbox"></td><td>3</td><td><input type="text" value="undefined"></td><td>4.57</td><td>33.25</td><td>4</td><td>4159.21</td><td>484.74</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 74, 70, 0.5);"><td><input type="checkbox"></td><td>4</td><td><input type="text" value="undefined"></td><td>4.8</td><td>35</td><td>0</td><td>3797.6</td><td>264.6</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 137, 65, 0.5);"><td><input type="checkbox"></td><td>5</td><td><input type="text" value="undefined"></td><td>5.48</td><td>40.13</td><td>0</td><td>7403.15</td><td>536.87</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 111, 166, 0.5);"><td><input type="checkbox"></td><td>6</td><td><input type="text" value="undefined"></td><td>6.6</td><td>48.5</td><td>1.1</td><td>492.49</td><td>1708.79</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(163, 0, 89, 0.5);"><td><input type="checkbox"></td><td>7</td><td><input type="text" value="undefined"></td><td>7.75</td><td>57.13</td><td>0.5</td><td>14788.72</td><td>2036.04</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(255, 219, 229, 0.5);"><td><input type="checkbox"></td><td>8</td><td><input type="text" value="undefined"></td><td>8.18</td><td>60.38</td><td>0.73</td><td>3699.69</td><td>5828.89</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(122, 73, 0, 0.5);"><td><input type="checkbox"></td><td>9</td><td><input type="text" value="undefined"></td><td>9.28</td><td>68.63</td><td>0</td><td>3551.2</td><td>266.03</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 0, 166, 0.5);"><td><input type="checkbox"></td><td>10</td><td><input type="text" value="undefined"></td><td>10.02</td><td>74.13</td><td>1.15</td><td>2552.36</td><td>152.63</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(99, 255, 172, 0.5);"><td><input type="checkbox"></td><td>11</td><td><input type="text" value="undefined"></td><td>11.48</td><td>85.13</td><td>1.02</td><td>257.81</td><td>931.15</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(183, 151, 98, 0.5);"><td><input type="checkbox"></td><td>12</td><td><input type="text" value="undefined"></td><td>11.48</td><td>85.13</td><td>0.81</td><td>622.47</td><td>468.36</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(0, 77, 67, 0.5);"><td><input type="checkbox"></td><td>13</td><td><input type="text" value="undefined"></td><td>11.48</td><td>85.13</td><td>0.93</td><td>3607.62</td><td>159.1</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(143, 176, 255, 0.5);"><td><input type="checkbox"></td><td>14</td><td><input type="text" value="undefined"></td><td>12.57</td><td>93.25</td><td>2.5</td><td>64277.12</td><td>101</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(153, 125, 135, 0.5);"><td><input type="checkbox"></td><td>15</td><td><input type="text" value="undefined"></td><td>13.65</td><td>101.38</td><td>1.96</td><td>626.75</td><td>1020</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(90, 0, 7, 0.5);"><td><input type="checkbox"></td><td>16</td><td><input type="text" value="undefined"></td><td>13.3</td><td>98.75</td><td>0.83</td><td>3239.57</td><td>298.13</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(128, 150, 147, 0.5);"><td><input type="checkbox"></td><td>17</td><td><input type="text" value="undefined"></td><td>15.02</td><td>111.63</td><td>0.31</td><td>3890.47</td><td>314.04</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(27, 68, 0, 0.5);"><td><input type="checkbox"></td><td>18</td><td><input type="text" value="undefined"></td><td>17.22</td><td>128.13</td><td>0.82</td><td>3694.8</td><td>1457088.48</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(79, 198, 1, 0.5);"><td><input type="checkbox"></td><td>19</td><td><input type="text" value="undefined"></td><td>20.28</td><td>151.13</td><td>1.04</td><td>2525.46</td><td>470232.65</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(59, 93, 255, 0.5);"><td><input type="checkbox"></td><td>20</td><td><input type="text" value="undefined"></td><td>25.47</td><td>190</td><td>Infinity</td><td>3233675.84</td><td>139.8</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr><tr style="background-color: rgba(74, 59, 83, 0.5);"><td><input type="checkbox"></td><td>21</td><td><input type="text" value="undefined"></td><td>26.35</td><td>196.63</td><td>4.75</td><td>6544.22</td><td>500.47</td><td><button type="button" class="btn btn-info btn-sm" style="padding:0rem 1rem;">Details</button></td><td><button type="button" class="btn btn-danger btn-sm" style="padding:0rem 1rem;">Delete</button></td><td>/</td></tr></tbody></table></div></div> <div style="break-after: page;"></div></div></div></div> <div id="fii"></div> <div id="findPeaksModal" tabindex="-1" role="dialog" aria-labelledby="findPeaksModalLabel" aria-hidden="true" class="modal fade"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 id="findPeaksModalLabel" class="modal-title">Find Peaks</h5> <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div class="modal-body"><select id="findPeaksModalTargetGraphName"></select><br>
+    <div id="app">
+        <nav class="hidden-print navbar navbar-light navbar-expand-md fixed-top" style="background-color:white;">
+            <button class="navbar-toggler navbar-toggler-right d-print-none" type="button" data-toggle="collapse"
+                    data-target="#navbar1">
+                <span class="d-print-none navbar-toggler-icon"></span>
+            </button>
+            <a href="/" class="navbar-brand">Menu</a>
+            <div class="navbar-collapse collapse" id="navbar1">
+                <ul class="navbar-nav">
+                <span class="nav-link" href="#" id="saveBtn" data-toggle="tooltip" data-placement="bottom"
+                      title="Saves the changes made on the Server. (Ctrl+S)">
+                    <i style="width: 22px;height: 22px;" data-feather="save"></i> Save
+                </span>
+                    <span class="nav-link" href="#" id="deletePeaksBtn" data-toggle="tooltip" data-placement="bottom"
+                          title="Deletes all Peaks">
+                    <i style="width: 22px;height: 22px;" data-feather="trash-2"></i> Delete Peaks
+                </span>
+                    <span class="nav-link" href="#" id="findPeaksModalOpen" data-toggle="modal"
+                          data-placement="bottom"
+                          data-target="#findPeaksModal"
+                          onclick="$('#findPeaksModalMinWidth')[0].valueAsNumber=0;minArea=$('#findPeaksModalMinArea')[0].valueAsNumber=0;$('#findPeaksModalMinHeight')[0].valueAsNumber=0;"
+                          title="Find Peaks matching the required Conditions on the specified Graph. (Ctrl+F)">
+                    <i data-feather="search" style="width: 22px;height: 22px;"></i> Find Peaks
+                </span>
 
-                        Min. Peak Width:<input type="number" id="findPeaksModalMinWidth"><br>
-                        Min. Peak Area:<input type="number" id="findPeaksModalMinArea"><br>
-                        Min. Peak Height:<input type="number" id="findPeaksModalMinHeight"></div> <div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button> <button type="button" id="findPeaksModalDoFind" class="btn btn-primary">Find Peaks</button></div></div></div></div> <div id="viewOptionsModal" tabindex="-1" role="dialog" aria-labelledby="viewOptionsModalLabel" aria-hidden="true" class="modal fade"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 id="viewOptionsModalLabel" class="modal-title">Options</h5> <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div id="viewOptionsModalBody" class="modal-body"></div> <div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button> <button type="button" id="viewOptionsModalSave" class="btn btn-primary">Save</button></div></div></div></div></div>
+                    <span class="nav-link" href="#" id="scaleYBtn" data-toggle="tooltip" data-placement="bottom"
+                          title="Scale Y-Axis (Ctrl+Y)">
+                    <i style="width: 22px;height: 22px;transform:rotate(-45deg)" data-feather="maximize-2"></i> Scale Y-Axis
+                </span>
+                    <span class="nav-link" href="#" id="scaleXBtn" data-toggle="tooltip" data-placement="bottom"
+                          title="Scale X-Axis (Ctrl+X)">
+                    <i style="width: 22px;height: 22px;transform:rotate(45deg)" data-feather="maximize-2"></i> Scale X-Axis
+                </span>
+                    <button class="nav-link btn btn-sm hplc-btn" v-bind:class="{'btn-info':editBaseline}"
+                            id="editBaselineBtn" data-toggle="tooltip" data-placement="bottom"
+                            title="Edit Baseline (Ctrl+B)" v-on:click="editBaseline=!editBaseline;">
+                        <i style="width: 22px;height: 22px;" data-feather="edit"></i> Edit Baseline
+                    </button>
+                    <button class="nav-link btn btn-sm hplc-btn" v-bind:class="{'btn-info':editDeadTime}"
+                            id="deadtimeselection" data-toggle="tooltip"
+                            data-placement="bottom"
+                            title="Enables the Deadtime Selection on the Graphs. Click anywhere to move the Deadtime to that point."
+                            v-on:click="editDeadTime=!editDeadTime;">
+                        <i style="width: 22px;height: 22px;" data-feather="crosshair"></i> Deadtime Selection
+                    </button>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="download" style="width: 22px;height: 22px;"></i>Download</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item"
+                               id="downloadBtn"
+                               href="#"
+                               data-toggle="tooltip"
+                               data-placement="right"
+                               title="Downloads the current Chromatogram as an CSV file to be used in any other software">
+                                CSV
+                            </a>
+                            <a class="dropdown-item"
+                               id="downloadBtnJson"
+                               href="#"
+                               data-toggle="tooltip"
+                               data-placement="right"
+                               title="Downloads the underlying Data as json Object.">
+                                Json
+                            </a>
+                            <a class="dropdown-item"
+                               id="downloadBtnPeaksimple"
+                               href="#"
+                               data-toggle="tooltip"
+                               data-placement="right"
+                               title="Downloads the current Chromatogram as Peaksimple-compatible .asc files">
+                                Peaksimple
+                            </a>
+                            <a class="dropdown-item"
+                               id="exportBtn"
+                               href="?export=true"
+                               download data-toggle="tooltip"
+                               data-placement="right"
+                               title="Downloads the current Chromatogram as an HTML file that can be sent via mail">
+                                HTML Export
+                            </a>
+                            <a class="dropdown-item"
+                               id="exportBtn"
+                               href="/Chromatogram/7/PDFDownload?print=true"
+                               download data-toggle="tooltip"
+                               data-placement="right"
+                               title="Downloads the current Chromatogram as PDF File">
+                                PDF Report
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="more-vertical" style="width: 22px;height: 22px;"></i>More</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <table class="table small table-sm">
+                                <tr>
+                                    <th colspan="2">
+                                        Additional Options
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td><span class="nav-link" href="#" id="viewSwitch" style=""
+                                              data-toggle="tooltip"
+                                              data-placement="bottom" title="View-Switch">
+                                <i style="width: 22px;height: 22px;" data-feather="more-vertical"
+                                   id="viewSwitchIcon"></i> View-Switch
+                            </span></td>
+                                    <td>
+                                        <span class="nav-link" href="#" id="optionsBtn" style=""
+                                              data-toggle="tooltip"
+                                              data-placement="bottom" title="Options+">
+                                    <i style="width: 22px;height: 22px;" data-feather="settings"
+                                       id="optionsBtnIcon"></i> Options
+                            </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p>Import Chromatogram</p>
+                                        <span class="nav-link btn btn-sm hplc-btn"><input type="file"
+                                                                                          id="fileInput"/></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p>Import Calibration</p>
+                                        <span class="nav-link btn btn-sm hplc-btn"><input type="file"
+                                                                                          id="fileInputCalibration"/></span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="line-height:1.0; top:10px;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3>Chromatogram Details - 7</h3>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <chromatogram-infocard :chromatogram="chromatogram" graphname="UV"></chromatogram-infocard>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="card">
+                                <div class="card-header">Comment</div>
+                                <div class="card-block">
+                                <textarea id="comment"
+                                          style="width:100%;height:140px" v-model="chromatogram.Comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    
+                    <div class="row">
+                        
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="card">
+                                    <div class="card-header">Eluent20</div>
+                                    <div class="card-block">
+                                        
+                                            
+                                                e0s1 - 1.0<br/>
+                                            
+                                        
+                                            
+                                                e0s2 - 2.0<br/>
+                                            
+                                        
+                                            
+                                                e0s3 - 3.0<br/>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="card">
+                                    <div class="card-header">Eluent21</div>
+                                    <div class="card-block">
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                e1s1 - 1.0<br/>
+                                            
+                                        
+                                            
+                                                e1s2 - 2.0<br/>
+                                            
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="card">
+                                    <div class="card-header">Eluent22</div>
+                                    <div class="card-block">
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                e2s1 - 1.0<br/>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="marker"></div>
+                <div v-for="(name,idx) in chromatogram.ChannelOrderShift.split(',').map((x)=>{return {name:x.split(' - ')[0].trim(),value:x.split(' - ')[1].trim()};}).filter((x) => chromatogram.Data.Data[x.name] !== undefined ).filter((x) => (chromatogram.Data.Data[x.name][0].length > x.value*chromatogram.SampleRate)).map((x)=>x.name)"
+                     class="col-lg-12 juhplcGraphAndTable">
+                    <div style="page-break-before:auto;"></div>
+                    <div style="page-break-inside: avoid;">
+                        <dygraphs-graph :chromatogram="chromatogram" :graphname="name"
+                                        :key="name+idx+'graph'"></dygraphs-graph>
+                        <peak-table :peaks="chromatogram.Data.Peaks" :chromatogram="chromatogram" :graphname="name"
+                                    :key="name+idx+'table'"></peak-table>
+                    </div>
+                    <div style="page-break-after:always;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="fii"></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="findPeaksModal" tabindex="-1" role="dialog" aria-labelledby="findPeaksModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="findPeaksModalLabel">Find Peaks</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <select id="findPeaksModalTargetGraphName">
+                        </select><br/>
+
+                        Min. Peak Width:<input type="number" id="findPeaksModalMinWidth"/><br/>
+                        Min. Peak Area:<input type="number" id="findPeaksModalMinArea"/><br/>
+                        Min. Peak Height:<input type="number" id="findPeaksModalMinHeight"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="findPeaksModalDoFind">Find Peaks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="viewOptionsModal" tabindex="-1" role="dialog"
+             aria-labelledby="viewOptionsModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewOptionsModalLabel">Options</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="viewOptionsModalBody">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="viewOptionsModalSave">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
 
     <script type="text/javascript">;function init(){window.lastUpdateTime=0;window.juhplc=new JuHPLC(window.chromatogram);$('#refreshCheckbox').change(function(){if(this.checked){window.refreshTimeout=setTimeout(update,1000);}else{if(window.refreshTimeout!=null){clearTimeout(window.refreshTimeout);}}});if($('#refreshCheckbox').checked){window.refreshTimeout=setTimeout(update,1000);}else{if(window.refreshTimeout!=null){clearTimeout(window.refreshTimeout);}}}
@@ -11797,6 +12047,5 @@ function saveComment(){var toSend={};toSend.Comment=$('#comment').val();$.ajax({
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="/static/js/ie10-viewport-bug-workaround.js"></script>-->
-
-
-</body></html>
+</body>
+</html>
